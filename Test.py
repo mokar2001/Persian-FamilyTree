@@ -1,9 +1,11 @@
-from Person import *
-from Family import *
-#ancestor
+from person import *
+from family import *
+
+
+# ancestor
 tree = Family('ali', 'm', 'mahrokh', False)
 
-#children of ali
+# children of ali
 tree.newChildren(
     'ali',
     [
@@ -16,7 +18,7 @@ tree.newChildren(
     ]
 )
 
-#children of shahnaz
+# children of shahnaz
 tree.newChildren(
     'shahnaz',
     [
@@ -25,7 +27,7 @@ tree.newChildren(
     ]
 )
 
-#children of shahram
+# children of shahram
 tree.newChildren(
     'shahram',
     [
@@ -34,7 +36,7 @@ tree.newChildren(
     ]
 )
 
-#children of hamideh
+# children of hamideh
 tree.newChildren(
     'hamideh',
     [
@@ -44,7 +46,7 @@ tree.newChildren(
     ]
 )
 
-#children of hamed
+# children of hamed
 tree.newChildren(
     'hamed',
     [
@@ -52,7 +54,7 @@ tree.newChildren(
     ]
 )
 
-#children of elham
+# children of elham
 tree.newChildren(
     'elham',
     [
@@ -60,7 +62,7 @@ tree.newChildren(
     ]
 )
 
-#children of mohamadreza
+# children of mohamadreza
 tree.newChildren(
     'mohamadreza',
     [
@@ -69,5 +71,5 @@ tree.newChildren(
 )
 
 print(tree.relation('nima', 'alex'))
-print(tree.siblingChildRelation(tree.findPerson('iman'), tree.findPerson('elham')))
+# print(tree.siblingChildRelation(tree.findPerson('iman'), tree.findPerson('elham')))
 tree.PrintFamilyTree()
